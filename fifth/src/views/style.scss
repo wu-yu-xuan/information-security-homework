@@ -1,33 +1,37 @@
 .container {
-  height: 60vh;
+  height: 80vh;
   width: 60%;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  font-size: 20px;
 }
 
 .input-row {
-  height: 20%;
+  height: 10%;
   display: flex;
+  padding: 5px 0;
+  align-items: stretch;
 }
 
 .input {
-  font-size: 20px;
-  height: 100%;
   width: 80%;
 }
 
-.btn {
+.label {
   width: 20%;
 }
 
-.iframe-row {
-  height: 80%;
+.display-row {
+  height: 30%;
+  padding: 5px;
   display: flex;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
-.iframe {
+.display-container {
   height: 100%;
-  width: 50%;
+  width: 49%;
+  overflow: hidden auto;
   border: 1px solid $color-divide;
-  resize: none;
 }

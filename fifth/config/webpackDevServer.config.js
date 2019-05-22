@@ -7,6 +7,7 @@ const config = require('./webpack.config.dev');
 const paths = require('./paths');
 const fetch = require('node-fetch');
 const bodyParser = require('body-parser');
+const handleUrl = require('./handleUrl');
 
 const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
 const host = process.env.HOST || '0.0.0.0';
@@ -92,12 +93,10 @@ module.exports = function (proxy, allowedHost) {
       // it used the same host and port.
       // https://github.com/facebookincubator/create-react-app/issues/2272#issuecomment-302832432
       app.use(noopServiceWorkerMiddleware());
-      app.use(bodyParser.json()); 
+      app.use(bodyParser.json());
       app.post('/url', async (req, res) => {
-        const { url } = req.body;
-        const response = await fetch(url);
-        const text = await response.text();
-        res.send(text);
+        const { url1, url2 } = req.body;
+        res.json(await handleUrl(url1, url2));
       });
     },
   };

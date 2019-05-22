@@ -47,6 +47,16 @@
   version "0.0.29"
   resolved "http://registry.npm.taobao.org/@types/json5/download/@types/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
 
+"@types/node-fetch@^2.3.4":
+  version "2.3.4"
+  resolved "https://registry.npm.taobao.org/@types/node-fetch/download/@types/node-fetch-2.3.4.tgz#a46fc4fe9f94b491bf551b6bb7f0f493b9bacd1a"
+  dependencies:
+    "@types/node" "*"
+
+"@types/node@*":
+  version "12.0.2"
+  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-12.0.2.tgz#3452a24edf9fea138b48fad4a0a028a683da1e40"
+
 "@types/node@^10.3.4":
   version "10.12.10"
   resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-10.12.10.tgz#4fa76e6598b7de3f0cb6ec3abacc4f59e5b3a2ce"
@@ -1826,6 +1836,10 @@ dom-converter@~0.2:
 dom-matches@>=1.0.1:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/dom-matches/download/dom-matches-2.0.0.tgz#d2728b416a87533980eb089b848d253cf23a758c"
+
+dom-parser@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.npm.taobao.org/dom-parser/download/dom-parser-0.1.6.tgz#696c633b535ab3291424eb5bf58ee426f64632ca"
 
 dom-scroll-into-view@1.x, dom-scroll-into-view@^1.2.0:
   version "1.2.1"
@@ -6496,6 +6510,10 @@ scss-tokenizer@^0.2.3:
   dependencies:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
+
+segment@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.npm.taobao.org/segment/download/segment-0.1.3.tgz#605f80fd6c7131c46e38103a17b1688f09efafa7"
 
 select-hose@^2.0.0:
   version "2.0.0"
