@@ -1,0 +1,33 @@
+.container {
+  height: 60vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column
+}
+
+.input-row {
+  height: 20%;
+  display: flex;
+}
+
+.input {
+  font-size: 20px;
+  height: 100%;
+  width: 80%;
+}
+
+.btn {
+  width: 20%;
+}
+
+.iframe-row {
+  height: 80%;
+  display: flex;
+}
+
+.iframe {
+  height: 100%;
+  width: 50%;
+  border: 1px solid $color-divide;
+  resize: none;
+}
